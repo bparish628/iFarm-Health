@@ -14,6 +14,8 @@
 		0D1650061F719307005891F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1650041F719307005891F7 /* LaunchScreen.storyboard */; };
 		0D1650111F719307005891F7 /* iFarm_HealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1650101F719307005891F7 /* iFarm_HealthTests.swift */; };
 		0D16501C1F719307005891F7 /* iFarm_HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16501B1F719307005891F7 /* iFarm_HealthUITests.swift */; };
+		0DDBD1F71F7ACA42003B5008 /* News.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F61F7ACA42003B5008 /* News.plist */; };
+		0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0D1650171F719307005891F7 /* iFarm-HealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iFarm-HealthUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D16501B1F719307005891F7 /* iFarm_HealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFarm_HealthUITests.swift; sourceTree = "<group>"; };
 		0D16501D1F719307005891F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DDBD1F61F7ACA42003B5008 /* News.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = News.plist; sourceTree = "<group>"; };
+		0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = News/NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		0D164FEF1F719307005891F7 = {
 			isa = PBXGroup;
 			children = (
+				0DDBD1F51F7AC9BD003B5008 /* Resources */,
 				0D164FFA1F719307005891F7 /* Classes */,
 				0D16500F1F719307005891F7 /* iFarm-HealthTests */,
 				0D16501A1F719307005891F7 /* iFarm-HealthUITests */,
@@ -130,6 +135,7 @@
 		0D16502B1F71C2D8005891F7 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */,
 			);
 			name = News;
 			sourceTree = "<group>";
@@ -139,6 +145,14 @@
 			children = (
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		0DDBD1F51F7AC9BD003B5008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DDBD1F61F7ACA42003B5008 /* News.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D1650061F719307005891F7 /* LaunchScreen.storyboard in Resources */,
+				0DDBD1F71F7ACA42003B5008 /* News.plist in Resources */,
 				0D1650031F719307005891F7 /* Assets.xcassets in Resources */,
 				0D1650011F719307005891F7 /* Main.storyboard in Resources */,
 			);
@@ -278,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */,
 				0D164FFE1F719307005891F7 /* ViewController.swift in Sources */,
 				0D164FFC1F719307005891F7 /* AppDelegate.swift in Sources */,
 			);
