@@ -14,6 +14,7 @@
 		0D1650061F719307005891F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1650041F719307005891F7 /* LaunchScreen.storyboard */; };
 		0D1650111F719307005891F7 /* iFarm_HealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1650101F719307005891F7 /* iFarm_HealthTests.swift */; };
 		0D16501C1F719307005891F7 /* iFarm_HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16501B1F719307005891F7 /* iFarm_HealthUITests.swift */; };
+		0D7999A41F8407F60028F05C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7999A31F8407F60028F05C /* UIColorExtension.swift */; };
 		0DDBD1F71F7ACA42003B5008 /* News.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F61F7ACA42003B5008 /* News.plist */; };
 		0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		0D1650171F719307005891F7 /* iFarm-HealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iFarm-HealthUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D16501B1F719307005891F7 /* iFarm_HealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFarm_HealthUITests.swift; sourceTree = "<group>"; };
 		0D16501D1F719307005891F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D7999A31F8407F60028F05C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0DDBD1F61F7ACA42003B5008 /* News.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = News.plist; sourceTree = "<group>"; };
 		0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = News/NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 		0D164FFA1F719307005891F7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0D7999A21F8407CF0028F05C /* Extensions */,
 				0D16502C1F71C2FD005891F7 /* Navigation */,
 				0D16502B1F71C2D8005891F7 /* News */,
 				0D164FFB1F719307005891F7 /* AppDelegate.swift */,
@@ -145,6 +148,14 @@
 			children = (
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		0D7999A21F8407CF0028F05C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D7999A31F8407F60028F05C /* UIColorExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		0DDBD1F51F7AC9BD003B5008 /* Resources */ = {
@@ -296,6 +307,7 @@
 				0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */,
 				0D164FFE1F719307005891F7 /* ViewController.swift in Sources */,
 				0D164FFC1F719307005891F7 /* AppDelegate.swift in Sources */,
+				0D7999A41F8407F60028F05C /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

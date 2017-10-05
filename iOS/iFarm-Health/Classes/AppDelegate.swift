@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let tabCtrl = self.window!.rootViewController as! UITabBarController
+        tabCtrl.tabBar.selectionIndicatorImage = UIImage().makeImageWithColorAndSize(color: UIColor(red: 255, green: 179, blue:176, alpha: 0.65), size: CGSize(width: tabCtrl.tabBar.frame.width / 7, height: tabCtrl.tabBar.frame.height))
+        tabCtrl.tabBar.tintColor = UIColor(red: 255.0, green: 0, blue: 0, alpha: 1.0)
+
         return true
     }
 
