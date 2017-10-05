@@ -103,30 +103,6 @@
       "scale" : "2x"
     },
     {
-      "size" : "50x50",
-      "idiom" : "ipad",
-      "filename" : "Icon-Small-50x50@1x.png",
-      "scale" : "1x"
-    },
-    {
-      "size" : "50x50",
-      "idiom" : "ipad",
-      "filename" : "Icon-Small-50x50@2x.png",
-      "scale" : "2x"
-    },
-    {
-      "size" : "72x72",
-      "idiom" : "ipad",
-      "filename" : "Icon-App-72x72@1x.png",
-      "scale" : "1x"
-    },
-    {
-      "size" : "72x72",
-      "idiom" : "ipad",
-      "filename" : "Icon-App-72x72@2x.png",
-      "scale" : "2x"
-    },
-    {
       "size" : "76x76",
       "idiom" : "ipad",
       "filename" : "Icon-App-76x76@1x.png",
@@ -156,6 +132,12 @@
       "scale" : "1x"
     },
     {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-57x57@3x.png",
+      "scale" : "3x"
+    },
+    {
       "size" : "60x60",
       "idiom" : "iphone",
       "filename" : "Icon-App-60x60@1x.png",
@@ -172,6 +154,62 @@
       "idiom" : "ipad",
       "filename" : "Icon-App-76x76@3x.png",
       "scale" : "3x"
+    },
+    {
+      "filename" : "Default320x480.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default640x960.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default640x1136.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default750x1334.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default768x1024.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default1024x768.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default1125x2436.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default1242x2208.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default1536x2048.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default1920x1080.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default2048x1536.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default2208x1242.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default2436x1125.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Default3840x2160.png",
+      "unassigned" : true
     }
   ],
   "info" : {
