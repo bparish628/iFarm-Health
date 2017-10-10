@@ -23,7 +23,7 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="nez-em-jiR" kind="relationship" relationship="rootViewController" id="82h-Z2-jHI"/>
+                        <segue destination="Y2c-Hf-v0r" kind="relationship" relationship="rootViewController" id="FJu-Cm-9WJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NsL-aB-2cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -34,36 +34,30 @@
         <scene sceneID="N7I-1b-KWA">
             <objects>
                 <collectionViewController id="nez-em-jiR" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="GDX-8L-rGu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="abp-3N-Ixz">
-                            <size key="itemSize" width="330" height="157"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EVZ-rb-aoe">
-                                <rect key="frame" x="22.5" y="0.0" width="330" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="330" height="157"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="nez-em-jiR" id="BHh-cL-tqN"/>
-                            <outlet property="delegate" destination="nez-em-jiR" id="lda-mm-7PX"/>
-                        </connections>
-                    </collectionView>
                     <navigationItem key="navigationItem" title="Safety" id="NfZ-co-phv"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNy-9e-KxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-108" y="357.57121439280365"/>
+        </scene>
+        <!--Safety-->
+        <scene sceneID="WLn-iz-3yU">
+            <objects>
+                <viewController id="Y2c-Hf-v0r" customClass="SafetyViewController" customModule="iFarm_Health" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NH4-Wq-8BY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ntd-HJ-9Ed"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zxo-gF-Rpw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Safety" id="Yq1-dg-V1N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pgk-tw-Qmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="358"/>
         </scene>
         <!--Excercise-->
         <scene sceneID="uA6-fZ-pBs">
