@@ -1,5 +1,5 @@
 //
-//  SafetyViewController.swift
+//  SafetyViewWebViewController.swift
 //  iFarm-Health
 //
 //  Created by Benji Parish on 10/10/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 import WebKit
-class SafetyViewController: UIViewController, WKUIDelegate {
+class SafetyViewWebViewController: UIViewController, WKUIDelegate {
     
     var webView: WKWebView!
     
@@ -17,6 +17,7 @@ class SafetyViewController: UIViewController, WKUIDelegate {
         webView = WKWebView(frame: .zero, configuration: webConfiguration);
         webView.uiDelegate = self;
         view = webView;
+        self.navigationItem.title = "UNMC"
     }
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -40,3 +41,4 @@ class SafetyViewController: UIViewController, WKUIDelegate {
         self.navigationController?.setNavigationBarHidden(false, animated: animated);
     }
 }
+

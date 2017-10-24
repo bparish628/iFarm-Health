@@ -15,7 +15,11 @@
 		0D1650111F719307005891F7 /* iFarm_HealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1650101F719307005891F7 /* iFarm_HealthTests.swift */; };
 		0D16501C1F719307005891F7 /* iFarm_HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16501B1F719307005891F7 /* iFarm_HealthUITests.swift */; };
 		0D7999A41F8407F60028F05C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7999A31F8407F60028F05C /* UIColorExtension.swift */; };
-		0DBBCA7F1F8D3E8E00440F28 /* SafetyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBCA7E1F8D3E8E00440F28 /* SafetyViewController.swift */; };
+		0D9036801F9ED8A100265EA6 /* Safety.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D90367F1F9ED8A100265EA6 /* Safety.plist */; };
+		0D9036821F9EDB5000265EA6 /* SafetyViewWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036811F9EDB5000265EA6 /* SafetyViewWebViewController.swift */; };
+		0D9036841F9EDBFB00265EA6 /* SafetyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */; };
+		0D9036861F9EE8BB00265EA6 /* SafetyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */; };
+		0D9036881F9EFFD900265EA6 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036871F9EFFD900265EA6 /* Site.swift */; };
 		0DDBD1F71F7ACA42003B5008 /* News.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F61F7ACA42003B5008 /* News.plist */; };
 		0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +56,11 @@
 		0D16501B1F719307005891F7 /* iFarm_HealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFarm_HealthUITests.swift; sourceTree = "<group>"; };
 		0D16501D1F719307005891F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D7999A31F8407F60028F05C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		0DBBCA7E1F8D3E8E00440F28 /* SafetyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyViewController.swift; sourceTree = "<group>"; };
+		0D90367F1F9ED8A100265EA6 /* Safety.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Safety.plist; sourceTree = "<group>"; };
+		0D9036811F9EDB5000265EA6 /* SafetyViewWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyViewWebViewController.swift; sourceTree = "<group>"; };
+		0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTableViewCell.swift; sourceTree = "<group>"; };
+		0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTableViewController.swift; sourceTree = "<group>"; };
+		0D9036871F9EFFD900265EA6 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
 		0DDBD1F61F7ACA42003B5008 /* News.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = News.plist; sourceTree = "<group>"; };
 		0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = News/NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,7 +172,10 @@
 		0DBBCA7D1F8D3E6A00440F28 /* Safety */ = {
 			isa = PBXGroup;
 			children = (
-				0DBBCA7E1F8D3E8E00440F28 /* SafetyViewController.swift */,
+				0D9036811F9EDB5000265EA6 /* SafetyViewWebViewController.swift */,
+				0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */,
+				0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */,
+				0D9036871F9EFFD900265EA6 /* Site.swift */,
 			);
 			name = Safety;
 			sourceTree = "<group>";
@@ -173,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				0DDBD1F61F7ACA42003B5008 /* News.plist */,
+				0D90367F1F9ED8A100265EA6 /* Safety.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -240,23 +252,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Benji Parish";
 				TargetAttributes = {
 					0D164FF71F719307005891F7 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 77X3VPNGN3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					0D16500B1F719307005891F7 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 77X3VPNGN3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0D164FF71F719307005891F7;
 					};
 					0D1650161F719307005891F7 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 77X3VPNGN3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0D164FF71F719307005891F7;
 					};
@@ -287,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9036801F9ED8A100265EA6 /* Safety.plist in Resources */,
 				0D1650061F719307005891F7 /* LaunchScreen.storyboard in Resources */,
 				0DDBD1F71F7ACA42003B5008 /* News.plist in Resources */,
 				0D1650031F719307005891F7 /* Assets.xcassets in Resources */,
@@ -315,11 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9036821F9EDB5000265EA6 /* SafetyViewWebViewController.swift in Sources */,
 				0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */,
+				0D9036881F9EFFD900265EA6 /* Site.swift in Sources */,
 				0D164FFE1F719307005891F7 /* ViewController.swift in Sources */,
 				0D164FFC1F719307005891F7 /* AppDelegate.swift in Sources */,
+				0D9036841F9EDBFB00265EA6 /* SafetyTableViewCell.swift in Sources */,
+				0D9036861F9EE8BB00265EA6 /* SafetyTableViewController.swift in Sources */,
 				0D7999A41F8407F60028F05C /* UIColorExtension.swift in Sources */,
-				0DBBCA7F1F8D3E8E00440F28 /* SafetyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +403,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -392,7 +413,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -435,7 +460,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -443,7 +470,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -478,7 +509,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unmc.iFarm-Health";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -491,7 +523,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unmc.iFarm-Health";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -505,7 +538,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unmc.iFarm-HealthTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFarm-Health.app/iFarm-Health";
 			};
 			name = Debug;
@@ -520,7 +554,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unmc.iFarm-HealthTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFarm-Health.app/iFarm-Health";
 			};
 			name = Release;
@@ -534,7 +569,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unmc.iFarm-HealthUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "iFarm-Health";
 			};
 			name = Debug;
@@ -548,7 +584,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unmc.iFarm-HealthUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "iFarm-Health";
 			};
 			name = Release;
