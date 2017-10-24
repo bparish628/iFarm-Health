@@ -35,15 +35,27 @@ class SafetyTableViewController: UITableViewController {
     }
     
     private func loadSites() {
-        guard let cdc = Site(title: "CDC", description: "The National Institue for Occupational Safety and ...", url: "https://www.cdc.gov/niosh/index.htm") else {
+        guard let cdcniosh = Site(title: "CDC (NIOSH)", description: "The National Institute for Occupational Safety and Health (NIOSH)", url: "https://www.cdc.gov/niosh/index.htm") else {
             fatalError("Unable to create site")
         }
         
-        guard let unmc = Site(title: "UNMC", description: "University of Nebraska Medical Center", url: "https://www.unmc.edu/publichealth/cscash") else {
+        guard let cdc = Site(title: "CDC", description: "Centers for Disease Control and Prevention", url: "https://www.cdc.gov") else {
             fatalError("Unable to create site")
         }
         
-        sites += [cdc, unmc]
+        guard let unmcCSCash = Site(title: "UNMC CS-CASH", description: "CENTRAL STATES CENTER FOR AGRICULTURAL SAFETY AND HEALTH", url: "https://www.unmc.edu/publichealth/cscash/") else {
+            fatalError("Unable to create site")
+        }
+        
+        guard let unmcAgriculture = Site(title: "UNMC Environmental, Agricultural & Occupational Health", description: "Environmental, Agricultural & Occupational Health", url: "https://www.unmc.edu/publichealth/cscash/") else {
+            fatalError("Unable to create site")
+        }
+        
+        guard let unmc = Site(title: "UNMC Health", description: "University of Nebraska Medical Center", url: "https://www.unmc.edu") else {
+            fatalError("Unable to create site")
+        }
+        
+        sites += [cdcniosh, cdc, unmcCSCash, unmcAgriculture, unmc]
     }
 
     
@@ -97,14 +109,29 @@ class SafetyTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        super.prepare(for: segue, sender: sender)
+        
+        guard let siteDetailViewController = segue.destination as? SiteWebViewController else {
+            fatalError("Unexpected destination: \(segue.destination)")
+        }
+        
+        guard let selectedSiteCell = sender as? SafetyTableViewCell else {
+            fatalError("Unexpected sender: \(String(describing: sender))")
+        }
+        
+        guard let indexPath = tableView.indexPath(for: selectedSiteCell) else {
+            fatalError("The selected cell is not being displayed by the table")
+        }
+        
+        let selectedSite = sites[indexPath.row]
+        siteDetailViewController.site = selectedSite
     }
-    */
+ 
 
 }

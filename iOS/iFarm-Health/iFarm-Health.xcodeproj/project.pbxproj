@@ -16,7 +16,7 @@
 		0D16501C1F719307005891F7 /* iFarm_HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16501B1F719307005891F7 /* iFarm_HealthUITests.swift */; };
 		0D7999A41F8407F60028F05C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7999A31F8407F60028F05C /* UIColorExtension.swift */; };
 		0D9036801F9ED8A100265EA6 /* Safety.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D90367F1F9ED8A100265EA6 /* Safety.plist */; };
-		0D9036821F9EDB5000265EA6 /* SafetyViewWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036811F9EDB5000265EA6 /* SafetyViewWebViewController.swift */; };
+		0D9036821F9EDB5000265EA6 /* SiteWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036811F9EDB5000265EA6 /* SiteWebViewController.swift */; };
 		0D9036841F9EDBFB00265EA6 /* SafetyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */; };
 		0D9036861F9EE8BB00265EA6 /* SafetyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */; };
 		0D9036881F9EFFD900265EA6 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036871F9EFFD900265EA6 /* Site.swift */; };
@@ -57,7 +57,7 @@
 		0D16501D1F719307005891F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D7999A31F8407F60028F05C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0D90367F1F9ED8A100265EA6 /* Safety.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Safety.plist; sourceTree = "<group>"; };
-		0D9036811F9EDB5000265EA6 /* SafetyViewWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyViewWebViewController.swift; sourceTree = "<group>"; };
+		0D9036811F9EDB5000265EA6 /* SiteWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteWebViewController.swift; sourceTree = "<group>"; };
 		0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTableViewCell.swift; sourceTree = "<group>"; };
 		0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTableViewController.swift; sourceTree = "<group>"; };
 		0D9036871F9EFFD900265EA6 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 		0DBBCA7D1F8D3E6A00440F28 /* Safety */ = {
 			isa = PBXGroup;
 			children = (
-				0D9036811F9EDB5000265EA6 /* SafetyViewWebViewController.swift */,
+				0D9036811F9EDB5000265EA6 /* SiteWebViewController.swift */,
 				0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */,
 				0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */,
 				0D9036871F9EFFD900265EA6 /* Site.swift */,
@@ -331,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9036821F9EDB5000265EA6 /* SafetyViewWebViewController.swift in Sources */,
+				0D9036821F9EDB5000265EA6 /* SiteWebViewController.swift in Sources */,
 				0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */,
 				0D9036881F9EFFD900265EA6 /* Site.swift in Sources */,
 				0D164FFE1F719307005891F7 /* ViewController.swift in Sources */,

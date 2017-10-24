@@ -17,6 +17,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e6O-lj-k6r">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="1" green="0.21959960279999999" blue="0.063789565670000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,8 +64,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFG-rB-8Kl">
-                                            <rect key="frame" x="22" y="48" width="316" height="43"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFG-rB-8Kl">
+                                            <rect key="frame" x="18" y="43" width="318" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>
@@ -75,7 +76,7 @@
                                 <connections>
                                     <outlet property="descriptionLabel" destination="eFG-rB-8Kl" id="Z8q-b2-gto"/>
                                     <outlet property="titleLabel" destination="knr-Jk-Dtg" id="ix3-EI-vBR"/>
-                                    <segue destination="Y2c-Hf-v0r" kind="show" id="vuQ-Ao-Foy"/>
+                                    <segue destination="Y2c-Hf-v0r" kind="show" identifier="ShowWebpage" id="a8J-KS-2Bq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -84,7 +85,9 @@
                             <outlet property="delegate" destination="CPo-vO-odb" id="kPe-ez-Fmh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Safety" id="OqJ-PL-JlB"/>
+                    <navigationItem key="navigationItem" title="Safety" id="OqJ-PL-JlB">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="uSw-Mf-RM2"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1g0-JF-iFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +96,7 @@
         <!--Safety-->
         <scene sceneID="WLn-iz-3yU">
             <objects>
-                <viewController id="Y2c-Hf-v0r" customClass="SafetyViewController" customModule="iFarm_Health" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y2c-Hf-v0r" customClass="SiteWebViewController" customModule="iFarm_Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NH4-Wq-8BY"/>
                         <viewControllerLayoutGuide type="bottom" id="Ntd-HJ-9Ed"/>
@@ -103,9 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Safety" id="Yq1-dg-V1N">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="BwK-Wg-o2d"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Safety" id="Yq1-dg-V1N"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pgk-tw-Qmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
