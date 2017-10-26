@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_news"
+        android:title="@string/menu_news"
+        android:icon="@drawable/ic_view_headline_black_24dp"
+        />
+    <item
+        android:id="@+id/menu_safety"
+        android:title="@string/menu_safety"
+        android:icon="@drawable/ic_local_hospital_black_24dp"
+        />
+
+    <item
+        android:id="@+id/menu_exercise"
+        android:title="@string/menu_exercise"
+        android:icon="@drawable/ic_directions_run_black_24dp"
+        />
+</menu>
