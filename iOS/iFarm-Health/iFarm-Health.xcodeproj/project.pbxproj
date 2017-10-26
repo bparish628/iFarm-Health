@@ -116,7 +116,6 @@
 			children = (
 				0DBBCA7D1F8D3E6A00440F28 /* Safety */,
 				0D7999A21F8407CF0028F05C /* Extensions */,
-				0D16502C1F71C2FD005891F7 /* Navigation */,
 				0D16502B1F71C2D8005891F7 /* News */,
 				0D164FFB1F719307005891F7 /* AppDelegate.swift */,
 				0D164FFD1F719307005891F7 /* ViewController.swift */,
@@ -152,13 +151,6 @@
 				0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */,
 			);
 			name = News;
-			sourceTree = "<group>";
-		};
-		0D16502C1F71C2FD005891F7 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Navigation;
 			sourceTree = "<group>";
 		};
 		0D7999A21F8407CF0028F05C /* Extensions */ = {

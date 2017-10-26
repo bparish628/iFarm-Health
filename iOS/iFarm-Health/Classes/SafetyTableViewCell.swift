@@ -8,19 +8,20 @@
 
 import UIKit
 
+/**
+ Controller of the TableCell of the Safety Page
+ */
 class SafetyTableViewCell: UITableViewCell {
+    
+    // MARK: - Variables
 
+    /**
+     The title of the site.
+     */
     @IBOutlet weak var titleLabel: UILabel!
+    
+    /**
+     The description of the site.
+     */
     @IBOutlet weak var descriptionLabel: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

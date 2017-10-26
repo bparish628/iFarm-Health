@@ -1,0 +1,6 @@
+jazzy --clean \
+	--author "Benji Parish" \
+	--module-version 1.0.0 \
+	--readme README.md \
+	--github_url https://github.com/bparish628/iFarm-Health/tree/master/iOS/iFarm-Health \
+	--min-acl internal

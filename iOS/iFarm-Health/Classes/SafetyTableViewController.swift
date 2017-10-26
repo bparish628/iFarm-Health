@@ -8,10 +8,23 @@
 
 import UIKit
 
+/**
+     Controller of the TableView of the Safety Page
+ */
 class SafetyTableViewController: UITableViewController {
     
+    // MARK: - Variables
+    
+    /**
+         Contains a list of the selectable sites
+     */
     var sites = [Site]()
+    
+    // MARK: - Functions
 
+    /**
+         After view loads, load the sites
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,17 +32,17 @@ class SafetyTableViewController: UITableViewController {
         loadSites()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
+    /**
+         Number of sections in the table
+     */
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
+    /**
+         Number of rows in the table.
+         @return length of sites
+     */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sites.count
     }
@@ -58,7 +71,9 @@ class SafetyTableViewController: UITableViewController {
         sites += [cdcniosh, cdc, unmcCSCash, unmcAgriculture, unmc]
     }
 
-    
+    /**
+         Creates each of the cells of the table. Will use var sites.
+     */
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "SafetyTableViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? SafetyTableViewCell else {

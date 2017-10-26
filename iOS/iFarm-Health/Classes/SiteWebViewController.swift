@@ -1,4 +1,5 @@
 //
+//  @file
 //  SafetyViewWebViewController.swift
 //  iFarm-Health
 //
@@ -8,17 +9,39 @@
 
 import UIKit
 import WebKit
+
+/**
+ Controls the webview of the site that is passed in when clicked from the TableCell
+ */
 class SiteWebViewController: UIViewController, WKUIDelegate {
     
+    // MARK: - Variables
+
+    /**
+     Contains the webview
+     */
     var webView: WKWebView!
+    
+    /**
+     Contains the passed in site
+     */
     var site: Site!
     
+    // MARK: - Functions
+
+    /**
+     Sets up the initial webview
+     */
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration();
         webView = WKWebView(frame: .zero, configuration: webConfiguration);
         webView.uiDelegate = self;
         view = webView;
     }
+    
+    /**
+     After the view loads, use the sites url
+     */
     override func viewDidLoad() {
         super.viewDidLoad();
         
@@ -27,16 +50,14 @@ class SiteWebViewController: UIViewController, WKUIDelegate {
         webView.load(myRequest);
     }
     
+    /**
+     When the view will appear, set it's navigation title to the sites title
+     */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         
         // Set the title to the title of the site
         navigationItem.title = self.site.title
-//        navigationItem.backBarButtonItem?.title = "Back"
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated);
     }
 }
 

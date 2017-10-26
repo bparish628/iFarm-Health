@@ -9,6 +9,12 @@
 import UIKit
 
 extension UIImage {
+    
+    // MARK: - Functions
+
+    /**
+         Creates an image from a passed in color.
+     */
     func makeImageWithColorAndSize(color: UIColor, size: CGSize) -> UIImage {
         UIGraphicsBeginImageContext(size)
         color.setFill()
@@ -18,6 +24,9 @@ extension UIImage {
         return image!
     }
     
+    /**
+         Creates a UIColor from an rgb value
+     */
     func rgb(fromHex: Int) -> UIColor {
         let red =   CGFloat((fromHex & 0xFF0000) >> 16) / 0xFF
         let green = CGFloat((fromHex & 0x00FF00) >> 8) / 0xFF
