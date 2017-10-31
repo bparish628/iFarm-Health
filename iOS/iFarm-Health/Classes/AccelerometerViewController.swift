@@ -13,7 +13,9 @@ class AccelerometerViewController: UIViewController {
 
     let manager = CMMotionManager()
     @IBOutlet weak var stopExercise: UIButton!
-    @IBOutlet weak var info: UILabel!
+    @IBOutlet weak var x: UILabel!
+    @IBOutlet weak var y: UILabel!
+    @IBOutlet weak var z: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +24,9 @@ class AccelerometerViewController: UIViewController {
             manager.startAccelerometerUpdates(to: .main) {
                 [weak self] (data: CMAccelerometerData?, error: Error?) in
                 if let acceleration = data?.acceleration {
-                    let rotation = String(acceleration.x)
-                    self?.info.text = String(rotation)
+                    self?.x.text = String(acceleration.x)
+                    self?.y.text = String(acceleration.y)
+                    self?.z.text = String(acceleration.z)
                 }
             }
         }
