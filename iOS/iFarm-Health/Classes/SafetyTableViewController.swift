@@ -16,7 +16,7 @@ class SafetyTableViewController: UITableViewController {
     // MARK: - Variables
     
     /**
-         Contains a list of the selectable sites
+         Contains a list of the selectable sites `Site`
      */
     var sites = [Site]()
     
@@ -33,7 +33,8 @@ class SafetyTableViewController: UITableViewController {
     }
 
     /**
-         Number of sections in the table
+         The number of sections in the table (usually one)
+         - returns: number of secrions
      */
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -41,7 +42,7 @@ class SafetyTableViewController: UITableViewController {
 
     /**
          Number of rows in the table.
-         @return length of sites
+         - returns: length of sites
      */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sites.count
@@ -72,7 +73,8 @@ class SafetyTableViewController: UITableViewController {
     }
 
     /**
-         Creates each of the cells of the table. Will use var sites.
+         Creates each of the cells of the table. Will use `SafetyTableViewCell` for the cell
+         - returns: `SafetyTableViewCell` of the indexed site
      */
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "SafetyTableViewCell"
