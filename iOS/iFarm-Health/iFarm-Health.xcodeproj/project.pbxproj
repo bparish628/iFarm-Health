@@ -20,6 +20,7 @@
 		0D9036841F9EDBFB00265EA6 /* SafetyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */; };
 		0D9036861F9EE8BB00265EA6 /* SafetyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */; };
 		0D9036881F9EFFD900265EA6 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036871F9EFFD900265EA6 /* Site.swift */; };
+		0DD8E5CC1FA2569100EAC73C /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8E5CB1FA2569100EAC73C /* AccelerometerViewController.swift */; };
 		0DDBD1F71F7ACA42003B5008 /* News.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F61F7ACA42003B5008 /* News.plist */; };
 		0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTableViewCell.swift; sourceTree = "<group>"; };
 		0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTableViewController.swift; sourceTree = "<group>"; };
 		0D9036871F9EFFD900265EA6 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		0DD8E5CB1FA2569100EAC73C /* AccelerometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
 		0DDBD1F61F7ACA42003B5008 /* News.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = News.plist; sourceTree = "<group>"; };
 		0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = News/NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 		0D164FFA1F719307005891F7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0DD8E5CA1FA255BB00EAC73C /* Exercise */,
 				0DBBCA7D1F8D3E6A00440F28 /* Safety */,
 				0D7999A21F8407CF0028F05C /* Extensions */,
 				0D16502B1F71C2D8005891F7 /* News */,
@@ -170,6 +173,14 @@
 				0D9036871F9EFFD900265EA6 /* Site.swift */,
 			);
 			name = Safety;
+			sourceTree = "<group>";
+		};
+		0DD8E5CA1FA255BB00EAC73C /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				0DD8E5CB1FA2569100EAC73C /* AccelerometerViewController.swift */,
+			);
+			name = Exercise;
 			sourceTree = "<group>";
 		};
 		0DDBD1F51F7AC9BD003B5008 /* Resources */ = {
@@ -330,6 +341,7 @@
 				0D164FFC1F719307005891F7 /* AppDelegate.swift in Sources */,
 				0D9036841F9EDBFB00265EA6 /* SafetyTableViewCell.swift in Sources */,
 				0D9036861F9EE8BB00265EA6 /* SafetyTableViewController.swift in Sources */,
+				0DD8E5CC1FA2569100EAC73C /* AccelerometerViewController.swift in Sources */,
 				0D7999A41F8407F60028F05C /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
