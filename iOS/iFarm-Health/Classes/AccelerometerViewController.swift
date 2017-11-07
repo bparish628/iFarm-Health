@@ -30,11 +30,22 @@ class AccelerometerViewController: UIViewController {
                 }
             }
         }
+        
+        stopExercise.addTarget(self, action: #selector(self.goBack), for: .touchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    /// Goes back to the previous screen. aka the beginning of the exercise
+    @IBAction func goBack(sender: UIButton!) {
+        if let nav = self.navigationController {
+            nav.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
 
