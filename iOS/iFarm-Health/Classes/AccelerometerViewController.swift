@@ -19,14 +19,16 @@ class AccelerometerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        styleLabels()
         if manager.isAccelerometerAvailable {
             manager.accelerometerUpdateInterval = 0.01
             manager.startAccelerometerUpdates(to: .main) {
                 [weak self] (data: CMAccelerometerData?, error: Error?) in
                 if let acceleration = data?.acceleration {
-                    self?.x.text = String(acceleration.x)
-                    self?.y.text = String(acceleration.y)
-                    self?.z.text = String(acceleration.z)
+                    self?.x.text = String(Double(round(1000*acceleration.x)/1000))
+                    self?.y.text = String(Double(round(1000*acceleration.y)/1000))
+                    self?.z.text = String(Double(round(1000*acceleration.z)/1000))
                 }
             }
         }
@@ -37,6 +39,24 @@ class AccelerometerViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func styleLabels() {
+        // X label
+        x.layer.borderWidth = 2.0
+        x.layer.cornerRadius = 8
+        x.layer.borderColor = UIColor.green.cgColor
+        
+        // Y label
+        y.layer.borderWidth = 2.0
+        y.layer.cornerRadius = 8
+        y.layer.borderColor = UIColor.blue.cgColor
+        
+        // Z label
+        z.layer.borderWidth = 2.0
+        z.layer.cornerRadius = 8
+        z.layer.borderColor = UIColor.red.cgColor
+
     }
 
     /// Goes back to the previous screen. aka the beginning of the exercise
