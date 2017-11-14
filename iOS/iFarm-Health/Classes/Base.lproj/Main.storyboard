@@ -188,9 +188,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accelerometer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi3-yG-ncM">
-                                <rect key="frame" x="65" y="28" width="245" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accelerometer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi3-yG-ncM">
+                                <rect key="frame" x="128.5" y="28" width="118" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -213,7 +212,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9io-pV-3oe">
-                                <rect key="frame" x="141.5" y="474" width="92" height="90"/>
+                                <rect key="frame" x="119.5" y="474" width="70" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="9a1-wq-bdc"/>
                                     <constraint firstAttribute="width" constant="70" id="xP1-vg-em1"/>
@@ -223,7 +222,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kct-RU-FKf">
-                                <rect key="frame" x="263.5" y="474" width="92.5" height="90"/>
+                                <rect key="frame" x="219.5" y="474" width="70.5" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="DUS-El-KqW"/>
                                     <constraint firstAttribute="height" constant="90" id="Glg-I7-bOZ"/>
@@ -233,7 +232,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQr-sr-sz3">
-                                <rect key="frame" x="19" y="474" width="92.5" height="90"/>
+                                <rect key="frame" x="19" y="474" width="70.5" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="2A1-c1-CJZ"/>
                                     <constraint firstAttribute="width" constant="70" id="sxv-sm-f9u"/>
@@ -242,6 +241,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJH-Fp-Chg" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="19" y="57" width="340" height="256"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -257,12 +261,15 @@
                             <constraint firstItem="Kct-RU-FKf" firstAttribute="leading" secondItem="9io-pV-3oe" secondAttribute="trailing" constant="30" id="P4W-2Q-eci"/>
                             <constraint firstItem="ITx-d5-Rjp" firstAttribute="top" secondItem="Kct-RU-FKf" secondAttribute="bottom" constant="30" id="X4B-s7-7F7"/>
                             <constraint firstItem="dlY-u2-nUC" firstAttribute="top" secondItem="ITx-d5-Rjp" secondAttribute="bottom" constant="20" id="flq-tN-ob2"/>
+                            <constraint firstItem="bi3-yG-ncM" firstAttribute="top" secondItem="T4G-QB-vW3" secondAttribute="bottom" constant="8" id="gMN-Oi-BcQ"/>
                             <constraint firstItem="ITx-d5-Rjp" firstAttribute="leading" secondItem="3kx-N9-PAw" secondAttribute="leadingMargin" constant="3" id="pNX-fW-gf6"/>
+                            <constraint firstItem="bi3-yG-ncM" firstAttribute="centerX" secondItem="3kx-N9-PAw" secondAttribute="centerX" id="qSP-IM-G2A"/>
                             <constraint firstItem="KQr-sr-sz3" firstAttribute="leading" secondItem="3kx-N9-PAw" secondAttribute="leading" constant="19" id="t3b-EG-GZ6"/>
                             <constraint firstItem="ITx-d5-Rjp" firstAttribute="top" secondItem="KQr-sr-sz3" secondAttribute="bottom" constant="30" id="vMO-Xe-oG4"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chartView" destination="XJH-Fp-Chg" id="7hY-ky-dxc"/>
                         <outlet property="stopExercise" destination="ITx-d5-Rjp" id="69D-ch-wLW"/>
                         <outlet property="x" destination="KQr-sr-sz3" id="jbl-jq-QMA"/>
                         <outlet property="y" destination="9io-pV-3oe" id="ndt-fj-liA"/>

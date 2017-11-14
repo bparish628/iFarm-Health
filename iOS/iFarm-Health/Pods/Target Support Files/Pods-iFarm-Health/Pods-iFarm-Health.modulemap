@@ -1,0 +1,6 @@
+framework module Pods_iFarm_Health {
+  umbrella header "Pods-iFarm-Health-umbrella.h"
+
+  export *
+  module * { export * }
+}
