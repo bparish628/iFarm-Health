@@ -10,47 +10,38 @@ import UIKit
 import Charts
 import CoreMotion
 
+/**
+ Controller of the Accelerometer view
+ */
 class AccelerometerViewController: UIViewController {
 
     let manager = CMMotionManager()
     @IBOutlet weak var stopExercise: UIButton!
-    @IBOutlet weak var x: UILabel!
-    @IBOutlet weak var y: UILabel!
-    @IBOutlet weak var z: UILabel!
+    @IBOutlet var exportBtn: UIButton!
     @IBOutlet var chartView: LineChartView!
+    @IBOutlet weak var counter: UILabel!
     var xcords: Array<Double> = []
     var ycords: Array<Double> = []
     var zcords: Array<Double> = []
+    var timer = Timer()
+    var seconds = 3
+    var isRunning: Bool = false;
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // setup the chart
         setupChart()
-        styleLabels()
-        if manager.isAccelerometerAvailable {
-            manager.accelerometerUpdateInterval = 0.05
-            manager.startAccelerometerUpdates(to: .main) {
-                [weak self] (data: CMAccelerometerData?, error: Error?) in
-                if let acceleration = data?.acceleration {
-                    let accelX = Double(round(1000*acceleration.x)/1000)
-                    self?.x.text = String(accelX)
-                    self?.xcords.append(accelX)
-                    
-                    let accelY = Double(round(1000*acceleration.y)/1000)
-                    self?.y.text = String(accelY)
-                    self?.ycords.append(accelY)
-                    
-                    let accelZ = Double(round(1000*acceleration.z)/1000)
-                    self?.z.text = String(accelZ)
-                    self?.zcords.append(accelZ)
-                    
-                    self?.updateGraph()
-                }
-            }
-        }
+        
+        // Setup the accelerometer
+        toggleAccelerometer()
+        
+        // hide the export button
+        exportBtn.isHidden = true
 
-        stopExercise.addTarget(self, action: #selector(self.goBack), for: .touchUpInside)
+        // listen to the stopExercise button
+        stopExercise.addTarget(self, action: #selector(self.updateButton), for: .touchUpInside)
+        exportBtn.addTarget(self, action: #selector(self.exportData), for: .touchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,24 +49,38 @@ class AccelerometerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func styleLabels() {
-        // X label
-        x.layer.borderWidth = 2.0
-        x.layer.cornerRadius = 8
-        x.layer.borderColor = UIColor.green.cgColor
-        
-        // Y label
-        y.layer.borderWidth = 2.0
-        y.layer.cornerRadius = 8
-        y.layer.borderColor = UIColor.blue.cgColor
-        
-        // Z label
-        z.layer.borderWidth = 2.0
-        z.layer.cornerRadius = 8
-        z.layer.borderColor = UIColor.red.cgColor
-
+    /**
+        Toggle's whether the accelerometer is running. If it's running then it will stop it
+     */
+    func toggleAccelerometer() {
+        self.isRunning = !self.isRunning
+        exportBtn.isHidden = !self.isRunning
+        if manager.isAccelerometerAvailable {
+            manager.accelerometerUpdateInterval = 0.04 // This is about 20hz, we want 100hz at 0.01
+            if (!self.isRunning) {
+                manager.startAccelerometerUpdates(to: .main) {
+                    [weak self] (data: CMAccelerometerData?, error: Error?) in
+                    if let acceleration = data?.acceleration {
+                        let accelX = Double(round(1000*acceleration.x)/1000)
+                        self?.xcords.append(accelX)
+                        
+                        let accelY = Double(round(1000*acceleration.y)/1000)
+                        self?.ycords.append(accelY)
+                        
+                        let accelZ = Double(round(1000*acceleration.z)/1000)
+                        self?.zcords.append(accelZ)
+                        
+                        self?.updateGraph()
+                    }
+                }
+            } else {
+                manager.stopAccelerometerUpdates()
+            }
+        }
+        updateButtonTitle()
     }
     
+    /** Sets up all the chart variables and configurations */
     func setupChart() {
         chartView.dragEnabled = false
         chartView.scaleXEnabled = false
@@ -99,12 +104,13 @@ class AccelerometerViewController: UIViewController {
         chartView.leftAxis.drawZeroLineEnabled = true
         
         // Setting minimums
-        chartView.rightAxis.axisMaximum = 1.2
-        chartView.rightAxis.axisMinimum = -1.2
-        chartView.leftAxis.axisMaximum = 1.2
-        chartView.leftAxis.axisMinimum = -1.2
+        chartView.rightAxis.axisMaximum = 2
+        chartView.rightAxis.axisMinimum = -2
+        chartView.leftAxis.axisMaximum = 2
+        chartView.leftAxis.axisMinimum = -2
     }
     
+    /** Updates the graph will the x,y, and z data points */
     func updateGraph() {
         let data = LineChartData()
         data.addDataSet(createLine(data:self.xcords, color:UIColor.green, label: "X"))
@@ -114,7 +120,15 @@ class AccelerometerViewController: UIViewController {
         self.chartView.data = data
         self.chartView.chartDescription?.text = "Accelerometer Data"
     }
+    /** Resets the graph and all cord arrays to blank*/
+    func resetGraph() {
+        xcords = []
+        ycords = []
+        zcords = []
+        updateGraph()
+    }
     
+    /** Helper to create line points for the Chart */
     private func createLine(data: Array<Double>, color: UIColor, label: String) -> LineChartDataSet {
         var start = 0
         if (data.count > 50) {
@@ -134,24 +148,59 @@ class AccelerometerViewController: UIViewController {
         return line;
     }
 
-    /// Goes back to the previous screen. aka the beginning of the exercise
-    @IBAction func goBack(sender: UIButton!) {
-        if let nav = self.navigationController {
-            nav.popViewController(animated: true)
+    /** Toggles the hidden flags on buttons and will start/stop the accelerometer */
+    @IBAction func updateButton(sender: UIButton!) {
+        if (self.isRunning) {
+            stopExercise.isHidden = true
+            exportBtn.isHidden = true
+            counter.isHidden = false
+            resetGraph()
+            counter.text = String(seconds)
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(AccelerometerViewController.updateTimer)), userInfo: nil, repeats: true)
         } else {
-            self.dismiss(animated: true, completion: nil)
+            toggleAccelerometer()
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    /** Exports the data */
+    @IBAction func exportData(sender: UIButton!) {
+        let fileName = "ExerciseData.csv"
+        let path = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileName)
+        var csv = "Index,X,Y,Z\n"
+        for index in 0...(xcords.count - 1) {
+            let line = "\(index),\(xcords[index]),\(ycords[index]),\(zcords[index])\n"
+            csv.append(line)
+        }
+        
+        do {
+            try csv.write(to: path!, atomically: true, encoding: String.Encoding.utf8)
+            let activityCtrl = UIActivityViewController(activityItems: [path!], applicationActivities: [])
+            present(activityCtrl, animated: true, completion: nil)
+        } catch {
+            print("Failed to create the csv.")
+        }
     }
-    */
-
+    
+    /** Will run until the timer hits 0, updates the label */
+    @objc func updateTimer() {
+        seconds -= 1
+        counter.text = String(seconds)
+        if (seconds == 0) {
+            counter.isHidden = true
+            stopExercise.isHidden = false
+            seconds = 3
+            timer.invalidate()
+            toggleAccelerometer()
+        }
+    }
+    
+    /** Updates the update buttons text */
+    func updateButtonTitle() {
+        title = "Start Exercise"
+        if (!self.isRunning) {
+            title = "Stop Exercise"
+        }
+        stopExercise.setTitle(title, for: .normal)
+        self.navigationItem.title = "";
+    }
 }
