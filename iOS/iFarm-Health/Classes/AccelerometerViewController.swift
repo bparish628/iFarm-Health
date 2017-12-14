@@ -10,6 +10,11 @@ import UIKit
 import Charts
 import CoreMotion
 
+struct Constants {
+    static let timerLength = 3
+    static let chartDataLength = 50
+}
+
 /**
  Controller of the Accelerometer view
  */
@@ -24,7 +29,7 @@ class AccelerometerViewController: UIViewController {
     var ycords: Array<Double> = []
     var zcords: Array<Double> = []
     var timer = Timer()
-    var seconds = 3
+    var seconds = Constants.timerLength
     var isRunning: Bool = false;
 
     override func viewDidLoad() {
@@ -108,6 +113,9 @@ class AccelerometerViewController: UIViewController {
         chartView.rightAxis.axisMinimum = -2
         chartView.leftAxis.axisMaximum = 2
         chartView.leftAxis.axisMinimum = -2
+        
+        //Update the graph
+        updateGraph()
     }
     
     /** Updates the graph will the x,y, and z data points */
@@ -131,8 +139,8 @@ class AccelerometerViewController: UIViewController {
     /** Helper to create line points for the Chart */
     private func createLine(data: Array<Double>, color: UIColor, label: String) -> LineChartDataSet {
         var start = 0
-        if (data.count > 50) {
-            start = data.count - 50
+        if (data.count > Constants.chartDataLength) {
+            start = data.count - Constants.chartDataLength
         }
         var lineChartEntry = [ChartDataEntry]()
         for i in start..<data.count {
@@ -188,7 +196,7 @@ class AccelerometerViewController: UIViewController {
         if (seconds == 0) {
             counter.isHidden = true
             stopExercise.isHidden = false
-            seconds = 3
+            seconds = Constants.timerLength
             timer.invalidate()
             toggleAccelerometer()
         }
