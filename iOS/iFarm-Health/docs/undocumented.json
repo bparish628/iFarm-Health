@@ -1,6 +1,48 @@
 {
   "warnings": [
     {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/AccelerometerViewController.swift",
+      "line": 20,
+      "symbol": "AccelerometerViewController.startExerciseButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/AccelerometerViewController.swift",
+      "line": 21,
+      "symbol": "AccelerometerViewController.chartView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/AccelerometerViewController.swift",
+      "line": 22,
+      "symbol": "AccelerometerViewController.counter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/AccelerometerViewController.swift",
+      "line": 23,
+      "symbol": "AccelerometerViewController.exerciseType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/AccelerometerViewController.swift",
+      "line": 43,
+      "symbol": "AccelerometerViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/AccelerometerViewController.swift",
+      "line": 169,
+      "symbol": "AccelerometerViewController.startExercise()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/AppDelegate.swift",
       "line": 12,
       "symbol": "AppDelegate",
@@ -93,8 +135,64 @@
     },
     {
       "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/SafetyTableViewController.swift",
-      "line": 133,
+      "line": 125,
       "symbol": "SafetyTableViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/ScoreViewController.swift",
+      "line": 17,
+      "symbol": "ScoreViewController.dataPoints",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/ScoreViewController.swift",
+      "line": 18,
+      "symbol": "ScoreViewController.deltas",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/ScoreViewController.swift",
+      "line": 20,
+      "symbol": "ScoreViewController.scoreLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/ScoreViewController.swift",
+      "line": 21,
+      "symbol": "ScoreViewController.exportButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/ScoreViewController.swift",
+      "line": 22,
+      "symbol": "ScoreViewController.goBackButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/ScoreViewController.swift",
+      "line": 23,
+      "symbol": "ScoreViewController.descriptionLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/ScoreViewController.swift",
+      "line": 25,
+      "symbol": "ScoreViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/ScoreViewController.swift",
+      "line": 33,
+      "symbol": "ScoreViewController.didReceiveMemoryWarning()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
