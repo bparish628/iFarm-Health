@@ -30,14 +30,14 @@
     },
     {
       "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/AccelerometerViewController.swift",
-      "line": 43,
+      "line": 45,
       "symbol": "AccelerometerViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bparish/Development/iFarm-Health/iOS/iFarm-Health/Classes/AccelerometerViewController.swift",
-      "line": 169,
+      "line": 171,
       "symbol": "AccelerometerViewController.startExercise()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

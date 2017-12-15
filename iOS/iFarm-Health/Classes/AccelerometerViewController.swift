@@ -14,7 +14,7 @@ import CoreMotion
  Controller of the Accelerometer view
  */
 class AccelerometerViewController: UIViewController {
-
+    // MARK: - Variables
     /// Manager for the accelerometer
     let manager = CMMotionManager()
     @IBOutlet weak var startExerciseButton: UIButton!
@@ -39,6 +39,8 @@ class AccelerometerViewController: UIViewController {
     
     /// The current exercise the user is on
     var currentExercise = 0;
+    
+    // MARK: - Functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
