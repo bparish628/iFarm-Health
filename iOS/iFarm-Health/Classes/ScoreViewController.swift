@@ -65,14 +65,14 @@ class ScoreViewController: UIViewController {
         }
     }
 
-    /** Exports the data */
+    /** Exports the data as a csv */
     @IBAction func exportData(sender: UIButton!) {
         let fileName = "ExerciseData.csv"
         let path = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileName)
         var csv = "Index,X,Y,Z\n"
-        for index in 0..<(dataPoints.count) {
-            let point = dataPoints[index]
-            let line = "\(index),\(point.x),\(point.y),\(point.z)\n"
+        for i in 0..<(dataPoints.count) {
+            let point = dataPoints[i]
+            let line = "\(i),\(point.x),\(point.y),\(point.z)\n"
             csv.append(line)
         }
         

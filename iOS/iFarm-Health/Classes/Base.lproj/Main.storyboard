@@ -221,7 +221,7 @@
                                 <rect key="frame" x="21" y="613" width="368" height="53"/>
                                 <color key="backgroundColor" red="1" green="0.4027180588" blue="0.2876679842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <state key="normal" title="Stop Exercise"/>
+                                <state key="normal" title="Start Exercise"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -269,7 +269,7 @@
                         <outlet property="chartView" destination="XJH-Fp-Chg" id="7hY-ky-dxc"/>
                         <outlet property="counter" destination="Vur-8O-cAG" id="NVp-m8-uh3"/>
                         <outlet property="exerciseType" destination="gpL-mm-hd3" id="Eel-8w-4CB"/>
-                        <outlet property="stopExercise" destination="ITx-d5-Rjp" id="69D-ch-wLW"/>
+                        <outlet property="startExerciseButton" destination="ITx-d5-Rjp" id="xts-9M-8fG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aoh-iP-6rQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

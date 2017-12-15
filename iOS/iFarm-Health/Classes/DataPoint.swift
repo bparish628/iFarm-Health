@@ -14,13 +14,13 @@ import Foundation
 class DataPoint {
     // MARK: - Variables
     
-    /// The x value
+    /// The x value of the point
     var x: Double;
     
-    /// The y value
+    /// The y value of the point
     var y: Double;
     
-    /// The z value
+    /// The z value of the point
     var z: Double;
     
     // MARK: - Functions
