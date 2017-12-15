@@ -16,7 +16,7 @@ class SafetyTableViewController: UITableViewController {
     // MARK: - Variables
     
     /**
-         Contains a list of the selectable sites
+         Contains a list of the selectable sites `Site`
      */
     var sites = [Site]()
     
@@ -33,7 +33,8 @@ class SafetyTableViewController: UITableViewController {
     }
 
     /**
-         Number of sections in the table
+         The number of sections in the table (usually one)
+         - returns: number of secrions
      */
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -41,18 +42,14 @@ class SafetyTableViewController: UITableViewController {
 
     /**
          Number of rows in the table.
-         @return length of sites
+         - returns: length of sites
      */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sites.count
     }
     
     private func loadSites() {
-        guard let cdcniosh = Site(title: "CDC (NIOSH)", description: "The National Institute for Occupational Safety and Health (NIOSH)", url: "https://www.cdc.gov/niosh/index.htm") else {
-            fatalError("Unable to create site")
-        }
-        
-        guard let cdc = Site(title: "CDC", description: "Centers for Disease Control and Prevention", url: "https://www.cdc.gov") else {
+        guard let cdcniosh = Site(title: "CDC NIOSH", description: "The National Institute for Occupational Safety and Health (NIOSH)", url: "https://www.cdc.gov/niosh/index.htm") else {
             fatalError("Unable to create site")
         }
         
@@ -60,19 +57,16 @@ class SafetyTableViewController: UITableViewController {
             fatalError("Unable to create site")
         }
         
-        guard let unmcAgriculture = Site(title: "UNMC Environmental, Agricultural & Occupational Health", description: "Environmental, Agricultural & Occupational Health", url: "https://www.unmc.edu/publichealth/cscash/") else {
+        guard let unmcAgriculture = Site(title: "UNMC Environmental, Agricultural & Occupational Health", description: "Environmental, Agricultural & Occupational Health", url: "https://www.unmc.edu/publichealth/departments/enviromental/index.html") else {
             fatalError("Unable to create site")
         }
         
-        guard let unmc = Site(title: "UNMC Health", description: "University of Nebraska Medical Center", url: "https://www.unmc.edu") else {
-            fatalError("Unable to create site")
-        }
-        
-        sites += [cdcniosh, cdc, unmcCSCash, unmcAgriculture, unmc]
+        sites += [cdcniosh, unmcCSCash, unmcAgriculture]
     }
 
     /**
-         Creates each of the cells of the table. Will use var sites.
+         Creates each of the cells of the table. Will use `SafetyTableViewCell` for the cell
+         - returns: `SafetyTableViewCell` of the indexed site
      */
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "SafetyTableViewCell"

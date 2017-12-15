@@ -14,14 +14,21 @@
 		0D1650061F719307005891F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1650041F719307005891F7 /* LaunchScreen.storyboard */; };
 		0D1650111F719307005891F7 /* iFarm_HealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1650101F719307005891F7 /* iFarm_HealthTests.swift */; };
 		0D16501C1F719307005891F7 /* iFarm_HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16501B1F719307005891F7 /* iFarm_HealthUITests.swift */; };
+		0D2D18861FE3439000273D6C /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2D18851FE3439000273D6C /* DataPoint.swift */; };
+		0D2D18881FE354E500273D6C /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2D18871FE354E500273D6C /* ScoreViewController.swift */; };
+		0D2D188A1FE36E4900273D6C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2D18891FE36E4900273D6C /* Constants.swift */; };
 		0D7999A41F8407F60028F05C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7999A31F8407F60028F05C /* UIColorExtension.swift */; };
 		0D9036801F9ED8A100265EA6 /* Safety.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D90367F1F9ED8A100265EA6 /* Safety.plist */; };
 		0D9036821F9EDB5000265EA6 /* SiteWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036811F9EDB5000265EA6 /* SiteWebViewController.swift */; };
 		0D9036841F9EDBFB00265EA6 /* SafetyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */; };
 		0D9036861F9EE8BB00265EA6 /* SafetyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */; };
 		0D9036881F9EFFD900265EA6 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9036871F9EFFD900265EA6 /* Site.swift */; };
+		0DD8E5CC1FA2569100EAC73C /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8E5CB1FA2569100EAC73C /* AccelerometerViewController.swift */; };
 		0DDBD1F71F7ACA42003B5008 /* News.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F61F7ACA42003B5008 /* News.plist */; };
 		0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */; };
+		66D8C9740A982D69C3AF0338 /* Pods_iFarm_Health.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6E527F7AFAF50AB1CE5832 /* Pods_iFarm_Health.framework */; };
+		8C344AA25D6A780C2C529B8E /* Pods_iFarm_HealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19604278B829FCC355ECEFBC /* Pods_iFarm_HealthTests.framework */; };
+		FD5CB59C53EB440D07559A94 /* Pods_iFarm_HealthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03DE7DD083CBC0149CB25C6 /* Pods_iFarm_HealthUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +62,27 @@
 		0D1650171F719307005891F7 /* iFarm-HealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iFarm-HealthUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D16501B1F719307005891F7 /* iFarm_HealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFarm_HealthUITests.swift; sourceTree = "<group>"; };
 		0D16501D1F719307005891F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D2D18851FE3439000273D6C /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
+		0D2D18871FE354E500273D6C /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		0D2D18891FE36E4900273D6C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0D7999A31F8407F60028F05C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0D90367F1F9ED8A100265EA6 /* Safety.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Safety.plist; sourceTree = "<group>"; };
 		0D9036811F9EDB5000265EA6 /* SiteWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteWebViewController.swift; sourceTree = "<group>"; };
 		0D9036831F9EDBFB00265EA6 /* SafetyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTableViewCell.swift; sourceTree = "<group>"; };
 		0D9036851F9EE8BB00265EA6 /* SafetyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTableViewController.swift; sourceTree = "<group>"; };
 		0D9036871F9EFFD900265EA6 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		0DD8E5CB1FA2569100EAC73C /* AccelerometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
 		0DDBD1F61F7ACA42003B5008 /* News.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = News.plist; sourceTree = "<group>"; };
 		0DDBD1F81F7ACD8D003B5008 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = News/NewsViewController.swift; sourceTree = "<group>"; };
+		10A0E6F63016D0BBFC96FD6B /* Pods-iFarm-HealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFarm-HealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFarm-HealthTests/Pods-iFarm-HealthTests.release.xcconfig"; sourceTree = "<group>"; };
+		12E1FCF0E0BB3AB0F1634734 /* Pods-iFarm-Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFarm-Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFarm-Health/Pods-iFarm-Health.release.xcconfig"; sourceTree = "<group>"; };
+		19604278B829FCC355ECEFBC /* Pods_iFarm_HealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFarm_HealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6C44941CE3D440DA95338E /* Pods-iFarm-Health.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFarm-Health.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFarm-Health/Pods-iFarm-Health.debug.xcconfig"; sourceTree = "<group>"; };
+		70069164B0E9FDC0A982D72C /* Pods-iFarm-HealthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFarm-HealthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFarm-HealthTests/Pods-iFarm-HealthTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A03DE7DD083CBC0149CB25C6 /* Pods_iFarm_HealthUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFarm_HealthUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB64D05A8D1155C05450A850 /* Pods-iFarm-HealthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFarm-HealthUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFarm-HealthUITests/Pods-iFarm-HealthUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DA75D70646083700A0225A7A /* Pods-iFarm-HealthUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFarm-HealthUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFarm-HealthUITests/Pods-iFarm-HealthUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6E527F7AFAF50AB1CE5832 /* Pods_iFarm_Health.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFarm_Health.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D8C9740A982D69C3AF0338 /* Pods_iFarm_Health.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C344AA25D6A780C2C529B8E /* Pods_iFarm_HealthTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +106,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5CB59C53EB440D07559A94 /* Pods_iFarm_HealthUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073963E7B277D11F96ECE38E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E6C44941CE3D440DA95338E /* Pods-iFarm-Health.debug.xcconfig */,
+				12E1FCF0E0BB3AB0F1634734 /* Pods-iFarm-Health.release.xcconfig */,
+				70069164B0E9FDC0A982D72C /* Pods-iFarm-HealthTests.debug.xcconfig */,
+				10A0E6F63016D0BBFC96FD6B /* Pods-iFarm-HealthTests.release.xcconfig */,
+				DA75D70646083700A0225A7A /* Pods-iFarm-HealthUITests.debug.xcconfig */,
+				BB64D05A8D1155C05450A850 /* Pods-iFarm-HealthUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0D164FEF1F719307005891F7 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +134,8 @@
 				0D16500F1F719307005891F7 /* iFarm-HealthTests */,
 				0D16501A1F719307005891F7 /* iFarm-HealthUITests */,
 				0D164FF91F719307005891F7 /* Products */,
+				073963E7B277D11F96ECE38E /* Pods */,
+				BE07B29F6043C4C1382CE1A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +152,7 @@
 		0D164FFA1F719307005891F7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0DD8E5CA1FA255BB00EAC73C /* Exercise */,
 				0DBBCA7D1F8D3E6A00440F28 /* Safety */,
 				0D7999A21F8407CF0028F05C /* Extensions */,
 				0D16502B1F71C2D8005891F7 /* News */,
@@ -172,6 +211,17 @@
 			name = Safety;
 			sourceTree = "<group>";
 		};
+		0DD8E5CA1FA255BB00EAC73C /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				0DD8E5CB1FA2569100EAC73C /* AccelerometerViewController.swift */,
+				0D2D18851FE3439000273D6C /* DataPoint.swift */,
+				0D2D18871FE354E500273D6C /* ScoreViewController.swift */,
+				0D2D18891FE36E4900273D6C /* Constants.swift */,
+			);
+			name = Exercise;
+			sourceTree = "<group>";
+		};
 		0DDBD1F51F7AC9BD003B5008 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +231,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		BE07B29F6043C4C1382CE1A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E527F7AFAF50AB1CE5832 /* Pods_iFarm_Health.framework */,
+				19604278B829FCC355ECEFBC /* Pods_iFarm_HealthTests.framework */,
+				A03DE7DD083CBC0149CB25C6 /* Pods_iFarm_HealthUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D1650201F719307005891F7 /* Build configuration list for PBXNativeTarget "iFarm-Health" */;
 			buildPhases = (
+				AE0CF126476E2446D4D9F9DF /* [CP] Check Pods Manifest.lock */,
 				0D164FF41F719307005891F7 /* Sources */,
 				0D164FF51F719307005891F7 /* Frameworks */,
 				0D164FF61F719307005891F7 /* Resources */,
+				3E205B4FB6B334F55A920EC5 /* [CP] Embed Pods Frameworks */,
+				B68D3000250207576A6C3E82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D1650231F719307005891F7 /* Build configuration list for PBXNativeTarget "iFarm-HealthTests" */;
 			buildPhases = (
+				57AC27381B57812B025C0D0F /* [CP] Check Pods Manifest.lock */,
 				0D1650081F719307005891F7 /* Sources */,
 				0D1650091F719307005891F7 /* Frameworks */,
 				0D16500A1F719307005891F7 /* Resources */,
+				C3EC896312980A3A99D6F574 /* [CP] Embed Pods Frameworks */,
+				AAB9FBA2051F910AD64A5123 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,9 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D1650261F719307005891F7 /* Build configuration list for PBXNativeTarget "iFarm-HealthUITests" */;
 			buildPhases = (
+				D28B237C305F8E7DDCEDDD25 /* [CP] Check Pods Manifest.lock */,
 				0D1650131F719307005891F7 /* Sources */,
 				0D1650141F719307005891F7 /* Frameworks */,
 				0D1650151F719307005891F7 /* Resources */,
+				F9B6B3811544B94FB5F132DE /* [CP] Embed Pods Frameworks */,
+				BC5AD5FF7546404D6D0C9300 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,19 +387,161 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E205B4FB6B334F55A920EC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFarm-Health/Pods-iFarm-Health-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57AC27381B57812B025C0D0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB9FBA2051F910AD64A5123 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFarm-HealthTests/Pods-iFarm-HealthTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE0CF126476E2446D4D9F9DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B68D3000250207576A6C3E82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFarm-Health/Pods-iFarm-Health-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC5AD5FF7546404D6D0C9300 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFarm-HealthUITests/Pods-iFarm-HealthUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3EC896312980A3A99D6F574 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFarm-HealthTests/Pods-iFarm-HealthTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28B237C305F8E7DDCEDDD25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B6B3811544B94FB5F132DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFarm-HealthUITests/Pods-iFarm-HealthUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D164FF41F719307005891F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0D9036821F9EDB5000265EA6 /* SiteWebViewController.swift in Sources */,
+				0D2D18881FE354E500273D6C /* ScoreViewController.swift in Sources */,
 				0DDBD1F91F7ACD8D003B5008 /* NewsViewController.swift in Sources */,
+				0D2D18861FE3439000273D6C /* DataPoint.swift in Sources */,
 				0D9036881F9EFFD900265EA6 /* Site.swift in Sources */,
 				0D164FFE1F719307005891F7 /* ViewController.swift in Sources */,
 				0D164FFC1F719307005891F7 /* AppDelegate.swift in Sources */,
 				0D9036841F9EDBFB00265EA6 /* SafetyTableViewCell.swift in Sources */,
 				0D9036861F9EE8BB00265EA6 /* SafetyTableViewController.swift in Sources */,
+				0DD8E5CC1FA2569100EAC73C /* AccelerometerViewController.swift in Sources */,
 				0D7999A41F8407F60028F05C /* UIColorExtension.swift in Sources */,
+				0D2D188A1FE36E4900273D6C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +599,7 @@
 		0D16501E1F719307005891F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -432,7 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -445,6 +657,7 @@
 		0D16501F1F719307005891F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -483,7 +696,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -494,34 +707,39 @@
 		};
 		0D1650211F719307005891F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6C44941CE3D440DA95338E /* Pods-iFarm-Health.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77X3VPNGN3;
 				INFOPLIST_FILE = "$(SRCROOT)/Classes/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unmc.iFarm-Health";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		0D1650221F719307005891F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E1FCF0E0BB3AB0F1634734 /* Pods-iFarm-Health.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77X3VPNGN3;
 				INFOPLIST_FILE = "$(SRCROOT)/Classes/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unmc.iFarm-Health";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		0D1650241F719307005891F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70069164B0E9FDC0A982D72C /* Pods-iFarm-HealthTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +756,7 @@
 		};
 		0D1650251F719307005891F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A0E6F63016D0BBFC96FD6B /* Pods-iFarm-HealthTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +773,7 @@
 		};
 		0D1650271F719307005891F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA75D70646083700A0225A7A /* Pods-iFarm-HealthUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 77X3VPNGN3;
@@ -569,6 +789,7 @@
 		};
 		0D1650281F719307005891F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB64D05A8D1155C05450A850 /* Pods-iFarm-HealthUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 77X3VPNGN3;
