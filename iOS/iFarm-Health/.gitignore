@@ -1,4 +1,6 @@
 iFarm-Health.xcodeproj/project.xcworkspace/xcuserdata/*
+iFarm-Health.xcodeproj/xcuserdata/*
 iFarm-Health.xcworkspace/xcuserdata/*
+build/
 Podfile.lock
 Pods/*
