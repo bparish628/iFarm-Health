@@ -2,12 +2,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="55dp"
     tools:context="com.unmc.ifarmhealth.SafetyFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/button_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/menu_safety" />
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_cdc"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_x="132dp"
+            android:layout_y="65dp"
+            android:text="National Institute for Occupational Safety and Health" />
+
+        <Button
+            android:id="@+id/button_unmc"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_x="141dp"
+            android:layout_y="168dp"
+            android:text="UNMC" />
+
+        <Button
+            android:id="@+id/button_eaoh"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_x="137dp"
+            android:layout_y="311dp"
+            android:text="Environmental, Agricultural and Occupational Health" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webViewS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="55dp">
+
+    </WebView>
 
 </FrameLayout>
